@@ -1,0 +1,45 @@
+* {
+    font-family: -apple-system, 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #181A1B;
+    color: white;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    margin-right: 35%;
+    margin-left: 35%;
+    float: top;
+    border: 1px solid green;
+    border-radius: 4px;
+    background-color: #111111;
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    margin-left: 40%;
+    margin-right: 40%;
+    border: 1px solid green;
+    border-radius: 4px;
+    background-color: #111111;
+}
+
+section {
+    margin: auto;
+    width: 50%;
+    border: 1px solid green;
+    border-radius: 4px;
+    padding: 1%;
+    text-align: justify;
+    background-color: #111111;
+}
+
+footer {
+    text-align: center;
+}
