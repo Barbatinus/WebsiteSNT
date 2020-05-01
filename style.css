@@ -127,9 +127,8 @@ a {
 
 #toggle {
     margin: 5px;
-    cursor: pointer;
 }
- /* transform: rotate(-90deg) */
+ /* transform: rotate(-90deg); cursor: pointer;*/
 
 .toggle {
     transition: all .4s cubic-bezier(0,.5,0,1);
