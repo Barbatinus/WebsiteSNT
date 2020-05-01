@@ -1,6 +1,7 @@
-$('#toggle').click(function() {
+/* $('#toggle').click(function() {
   $('.slide-in').toggleClass('show');
-});
+  $('.toggle').toggleClass('open');
+}); */
 
 $('#main').mouseover(function() {
     $('.slide-in').toggleClass('show');
