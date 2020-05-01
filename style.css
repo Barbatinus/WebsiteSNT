@@ -112,7 +112,7 @@ a {
   }
   
   .slide-in-content {
-    transition: transform .5s ease; /* our nice transition */
+    transition: transform .8s ease; /* our nice transition */
   }
   
   .slide-in.from-left .slide-in-content {
@@ -133,9 +133,12 @@ a {
 #toggle {
     margin: 5px;
     cursor: pointer;
+}
+ /* transform: rotate(-90deg) */
+
+.toggle {
     transition: all .4s cubic-bezier(0,.5,0,1);
 }
-
-#toggle:hover {
+  .toggle.open {
     transform: rotate(-90deg)
-}
+  }
