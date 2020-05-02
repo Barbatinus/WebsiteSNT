@@ -1,4 +1,4 @@
-$('#toggle').click(function() {
+$('#menu').click(function() {
   $('.slide-in').toggleClass('show');
   $('.toggle').toggleClass('open');
 });
