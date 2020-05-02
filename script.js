@@ -1,7 +1,7 @@
-$('#menu').click(function() {
+/*$('#menu').click(function() {
   $('.slide-in').toggleClass('show');
   $('.toggle').toggleClass('open');
-});
+});*/
 
 $('#main').mouseover(function() {
     $('.slide-in').toggleClass('show');

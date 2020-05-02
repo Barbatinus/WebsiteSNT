@@ -7,7 +7,7 @@
 html, body {
     height: 100%;
     background-color: #181A1B;
-    font-size: 20px;
+    font-size: 17px;
     scroll-behavior: smooth;
     word-wrap: break-word;
     color: white;
@@ -71,9 +71,11 @@ a {
 
 #article {
     background-color: rgba(17, 17, 17, 0.6);
-    margin: 15px;
+    margin: 10px auto;
     border-radius: 15px;
     padding: 20px;
+    width: fit-content;
+    max-width: 92%;
 }
 
 #footer {
