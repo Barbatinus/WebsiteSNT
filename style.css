@@ -9,19 +9,47 @@ html, body {
     background-color: #181A1B;
     font-size: 20px;
     scroll-behavior: smooth;
-}
-
-#container {
-    min-height: 100%;
     word-wrap: break-word;
     color: white;
 }
 
+#container {
+    min-height: 100%;
+    max-width: 100%;
+}
+
+#header {
+  background-color: rgba(17, 17, 17, 0.6);
+  color: white;
+  position: relative;
+  clear: both;
+  text-align: center;
+  margin: 0px auto;
+  padding-bottom: 10px;
+  border-radius: 0px 0px 30px 30px;
+  width: fit-content;
+}
+
+#logo {
+  margin: 0px;
+}
+
 #main {
-    padding: 10px;
-    background-color: rgba(17, 17, 17, 0.6);
+    background-color: rgb(81, 98, 255);
     text-align: center;
-    border-radius: 20px 0px 0px 20px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+#toggle {
+  margin: 5px;
+}
+/* transform: rotate(-90deg); cursor: pointer;*/
+
+.toggle {
+  transition: all .4s cubic-bezier(0,.5,0,1);
+}
+.toggle.open {
+  transform: rotate(-90deg)
 }
 
 a {
@@ -42,12 +70,9 @@ a {
 
 #article {
     background-color: rgba(17, 17, 17, 0.6);
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-radius: 20px 20px 20px 20px;
+    margin: 15px;
+    border-radius: 15px;
     padding: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
 #footer {
@@ -56,12 +81,13 @@ a {
     position: relative;
     clear: both;
     height: 40px;
-    margin-top: 10px;
+    margin-top: 15px;
     text-align: center;
-    padding-top: 25px;
-    margin-left: 10px;
-    margin-right: 10px;
+    padding: 25px;
+    padding-bottom: 0px;
+    margin: 10px auto;
     border-radius: 30px 30px 0px 0px;
+    width: fit-content;
 }
 
 
@@ -93,7 +119,7 @@ a {
 
 /* Animation du menu */
 .slide-in {
-    z-index: 10; /* to position it in front of the other content */
+    z-index: 20; /* to position it in front of the other content */
     position: absolute;
     overflow: hidden; /* to prevent scrollbar appearing */
   }
@@ -105,19 +131,29 @@ a {
   .slide-in.from-right {
     right: 0;
   }
+
+  .slide-in.from-top {
+    margin: -20px auto;
+    width: 100%;
+  }
   
   .slide-in-content {
     transition: transform .8s ease; /* our nice transition */
   }
   
   .slide-in.from-left .slide-in-content {
-    transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
+    transform: translateX(-86%);
+    -webkit-transform: translateX(-86%);
   }
   
   .slide-in.from-right .slide-in-content {
-    transform: translateX(85%);
-    -webkit-transform: translateX(85%);
+    transform: translateX(86%);
+    -webkit-transform: translateX(86%);
+  }
+
+  .slide-in.from-top .slide-in-content {
+    transform: translateY(-60%);
+    -webkit-transform: translateY(-60%);
   }
   
   .slide-in.show .slide-in-content {
@@ -125,14 +161,20 @@ a {
     -webkit-transform: translateX(0);
   }
 
-#toggle {
-    margin: 5px;
-}
- /* transform: rotate(-90deg); cursor: pointer;*/
-
-.toggle {
-    transition: all .4s cubic-bezier(0,.5,0,1);
-}
-  .toggle.open {
-    transform: rotate(-90deg)
+  ul.damenu {
+    padding: 10px;
+    list-style: none;
   }
+  ul.damenu li {
+    display: inline;
+  }
+  ul.damenu li+li:before {
+    padding: 8px;
+    content: "-\00a0";
+  }
+  ul.damenu li a {
+    text-decoration: none;
+  }
+  /*ul.damenu li a:hover {
+    text-decoration: underline;
+  }*/
