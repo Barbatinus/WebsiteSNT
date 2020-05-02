@@ -86,7 +86,7 @@ footer {
     margin-top: 15px;
     text-align: center;
     padding: 20px;
-    margin: 15px auto;
+    margin: 10px auto;
     border-radius: 20px 20px 20px 20px;
     width: fit-content;
     max-width: 100%;
@@ -96,6 +96,7 @@ footer {
 #discord-icon {
     height: 25px;
     vertical-align: text-bottom;
+    border-radius: 50%;
 }
 
 /* width */
