@@ -15,16 +15,17 @@ html, body {
 
 #container {
     min-height: 100%;
-    max-width: 100%;
+    max-width: 800px;
+    margin: auto;
 }
 
-#header {
+header {
   background-color: rgba(17, 17, 17, 0.6);
   color: white;
   position: relative;
   clear: both;
   text-align: center;
-  margin: 0px auto;
+  margin: -20px auto;
   padding-bottom: 10px;
   border-radius: 0px 0px 30px 30px;
   width: fit-content;
@@ -32,7 +33,7 @@ html, body {
 }
 
 #logo {
-  margin: 0px;
+  margin: -30px;
 }
 
 #main {
