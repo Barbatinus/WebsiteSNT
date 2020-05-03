@@ -1,184 +1,157 @@
 * {
-    font-family: Comfortaa;
     margin: 0;
     padding: 0;
 }
 
 html, body {
     height: 100%;
-    background-color: #181A1B;
+    font-family: "Noto Sans";
+    background: -webkit-linear-gradient(#2f3944 0%, #414d5a 100%);
     font-size: 17px;
     scroll-behavior: smooth;
     word-wrap: break-word;
-    color: white;
+    color: #222;
 }
 
-#container {
-    min-height: 100%;
-    max-width: 800px;
-    margin: auto;
-}
-
-header {
-  background-color: rgba(20, 20, 21);
-  color: white;
-  position: relative;
-  clear: both;
-  text-align: center;
-  margin: -25px auto 10px;
-  padding-bottom: 10px;
-  border-radius: 0px 0px 30px 30px;
-  width: fit-content;
-  max-width: 100%;
+.containerfooter {
+    position: relative;
+    bottom: 0px;
 }
 
 #logo {
-  margin: -30px;
+    float: left;
+    height: 40px;
+    padding: 5px;
 }
 
-#main {
-    background-color: rgb(15, 15, 15);
-    text-align: center;
-    border-radius: 0px 0px 10px 10px;
-}
-
-#toggle {
-  margin: 5px;
-}
-/* transform: rotate(-90deg); cursor: pointer;*/
-
-.toggle {
-  transition: all .4s cubic-bezier(0,.5,0,1);
-}
-.toggle.open {
-  transform: rotate(-180deg);
-}
-
-a {
-    color: white;
-    text-decoration: none;
-    background-image: linear-gradient(currentColor, currentColor);
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 2px;
-    transition: background-size cubic-bezier(0,.5,0,1) 0.3s;
-  }
-  
-  a:hover,
-  a:focus {
-    text-decoration: none;
-    background-size: 100% 2px;
-  }
-
-#article {
-    background-color: rgba(20, 20, 21);
-    margin: 10px auto;
-    border-radius: 15px;
+header {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    max-width: 800px;
+    min-width: fit-content;
+    height: 48px;
+    margin: 0px auto;
+    border-style: solid;
+    border-width: 0px 1px 1px 1px;
+    border-color: #CCCCCC;
+    border-radius: 0px 0px 5px 5px;
     padding: 20px;
-    width: fit-content;
 }
 
-footer {
-    background-color: rgba(20, 20, 21);
-    color: white;
+.buttons {
+    position: relative;
+    float: right;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+.button1 {
+    font-size: 12px;
+    color: #0079D3;
+    background-color: white;
+    border-width: 1px;
+    border-color: #0079D3;
+    border-radius: 4px;
+    margin-right: 5px;
+    font-family: "IBM Plex Sans";
+    height: 32px;
+    width: 120px;
+    border-style: solid;
+}
+
+.button2 {
+    font-size: 12px;
+    color: #fff;
+    background-color: #0079D3;
+    border-width: 1px;
+    border-color: #0079D3;
+    border-radius: 4px;
+    margin-left: 5px;
+    font-family: "IBM Plex Sans";
+    height: 32px;
+    width: 120px;
+    border-style: solid;
+}
+
+.button1:hover {
+    border-color: #3293DB;
+    color: #3293DB;
+}
+
+.button2:hover {
+    background-color: #7FBCE9;
+    border-color: #7FBCE9;
+}
+
+.container {
+  font-size: 14px;
+  min-height: fit-content;
+  max-width: 800px;
+  margin: 10px auto 10px;
+  background-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-width: 1px;
+  border-color: #CCCCCC;
+  border-radius: 5px;
+  padding: 20px;
+  clear: both;
+}
+
+@media only screen and (max-width: 577px) {
+.button1 {
+    height: 32px;
+    width: 80px;
+}
+
+.button2 {
+    height: 32px;
+    width: 80px;
+}
+}
+
+@media only screen and (max-width: 800px) {
+  header {
+      height: 48px;
+      margin: 0px 10px 10px 10px;
+  }
+
+  .container {
+      margin: 10px 10px 10px 10px;
+  }
+}
+
+h1.title {
+    font-size: 20px;
+    line-height: 40px;
+    background: -webkit-linear-gradient(#2f3944 0%, #414d5a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+hr.separator {
+    height: 1px;
+    border-width: 0;
+    color: #CCCCCC;
+    background-color: #CCCCCC;
+    margin: 15px auto 15px;
+}
+
+.discord {
+    margin-top: 20px;
+    text-align: right;
+}
+
+
+.footer {
+    color: rgb(0, 0, 0);
     position: relative;
     clear: both;
-    margin-top: 15px;
     text-align: center;
-    padding: 20px;
-    margin: 10px auto;
-    border-radius: 20px 20px 20px 20px;
-    width: fit-content;
-    max-width: 100%;
+    margin: auto;
 }
-
 
 #discord-icon {
     height: 25px;
-    vertical-align: text-bottom;
+    vertical-align: middle;
     border-radius: 50%;
 }
-
-/* width */
-::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #1C1E1F;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #3A3E40;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
-
-
-/* Animation du menu */
-.slide-in {
-    z-index: 20; /* to position it in front of the other content */
-    position: absolute;
-    overflow: hidden; /* to prevent scrollbar appearing */
-  }
-  
-  .slide-in.from-left {
-    left: 0;
-  }
-  
-  .slide-in.from-right {
-    right: 0;
-  }
-
-  .slide-in.from-top {
-    margin: -20px auto;
-    width: 100%;
-  }
-  
-  .slide-in-content {
-    transition: transform .6s ease; /* our nice transition */
-  }
-  
-  .slide-in.from-left .slide-in-content {
-    transform: translateX(-86%);
-    -webkit-transform: translateX(-86%);
-  }
-  
-  .slide-in.from-right .slide-in-content {
-    transform: translateX(86%);
-    -webkit-transform: translateX(86%);
-  }
-
-  .slide-in.from-top .slide-in-content {
-    transform: translateY(-62%);
-    -webkit-transform: translateY(-62%);
-  }
-  
-  .slide-in.show .slide-in-content {
-    transform: translateX(0);
-    -webkit-transform: translateX(0);
-  }
-
-  ul.damenu {
-    padding: 10px;
-    padding-top: 20px;
-    list-style: none;
-  }
-  ul.damenu li {
-    display: inline;
-  }
-  ul.damenu li+li:before {
-    padding: 8px;
-    content: "-\00a0";
-  }
-  ul.damenu li a {
-    text-decoration: none;
-  }
-  /*ul.damenu li a:hover {
-    text-decoration: underline;
-  }*/
