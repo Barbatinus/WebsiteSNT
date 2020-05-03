@@ -18,12 +18,7 @@ html, body {
     bottom: 0px;
 }
 
-#logo {
-    float: left;
-    height: 40px;
-    padding: 5px;
-}
-
+/* Full header */
 header {
     background-color: rgb(255, 255, 255);
     position: relative;
@@ -36,6 +31,12 @@ header {
     border-color: #CCCCCC;
     border-radius: 0px 0px 5px 5px;
     padding: 20px;
+}
+
+#logo {
+  float: left;
+  height: 40px;
+  padding: 5px;
 }
 
 .buttons {
@@ -53,6 +54,7 @@ header {
     border-color: #0079D3;
     border-radius: 4px;
     font-family: "IBM Plex Sans";
+    margin-right: 5px;
     height: 32px;
     width: 120px;
     border-style: solid;
@@ -66,6 +68,7 @@ header {
     border-color: #0079D3;
     border-radius: 4px;
     font-family: "IBM Plex Sans";
+    margin-left: 5px;
     height: 32px;
     width: 120px;
     border-style: solid;
@@ -79,6 +82,16 @@ header {
 .button2:hover {
     background-color: #7FBCE9;
     border-color: #7FBCE9;
+}
+/* Full header end */
+
+/* Articles */
+h1.title {
+  font-size: 20px;
+  line-height: 40px;
+  background: -webkit-linear-gradient(#2f3944 0%, #414d5a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .container {
@@ -94,67 +107,18 @@ header {
   padding: 20px;
   clear: both;
 }
+/* Articles end*/
 
-ul.menu {
-  /*padding: 10px;
-  padding-top: 20px;*/
-  list-style: none;
-}
-ul.menu li {
-  display: inline;
-}
-ul.menu li+li:before {
-  padding: 5px;
-  content: "\00a0";
-}
-ul.menu li a {
-  text-decoration: none;
-}
-/*ul.damenu li a:hover {
-  text-decoration: underline;
-}*/
+/* Responsive */
+@media only screen and (max-width: 800px) {
+  header {
+      height: 48px;
+      margin: 0px 10px 10px 10px;
+  }
 
-@media only screen and (max-width: 577px) {
-header {
-    padding: 20px;
-}
-.buttons {
-    margin-top: -18px;
-    position: relative;
-    float: right;
-    padding: 0px;
-    margin-right: 0px;
-}
-
-.button1 {
-    margin-bottom: 5px;
-    height: 32px;
-    width: 80px;
-}
-
-.button2 {
-    height: 32px;
-    width: 80px;
-}
-
-ul.menu {
-  /*padding: 10px;
-  padding-top: 20px;*/
-  list-style: none;
-}
-ul.menu li {
-  display: list-item;
-}
-ul.menu li+li:before {
-  margin: -5px;
-  content: "";
-}
-ul.menu li a {
-  text-decoration: none;
-}
-/*ul.damenu li a:hover {
-  text-decoration: underline;
-}*/
+  .container {
+      margin: 10px 10px 10px 10px;
+  }
 }
 
 @media only screen and (max-width: 585px) {
@@ -176,24 +140,24 @@ ul.menu li a {
 }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 496px) {
   header {
-      height: 48px;
-      margin: 0px 10px 10px 10px;
+    text-align: center;
+    height: fit-content;
   }
 
-  .container {
-      margin: 10px 10px 10px 10px;
-  }
+  #logo {
+    float: none;
+    margin: 0px auto 10px auto;
+    padding: 0px;
 }
-
-h1.title {
-    font-size: 20px;
-    line-height: 40px;
-    background: -webkit-linear-gradient(#2f3944 0%, #414d5a 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  .buttons {
+    float: none;
+    margin: 0px auto 0px auto;
+    padding: 0px;
 }
+}
+/* Responsive end*/
 
 hr.separator {
     height: 1px;
