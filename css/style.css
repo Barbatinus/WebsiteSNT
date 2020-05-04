@@ -20,6 +20,7 @@ header {
     max-width: 800px;
     min-width: fit-content;
     min-width: -moz-fit-content;
+    min-width: intrinsic;
     height: 48px;
     margin: 0px auto;
     border-style: solid;
@@ -32,7 +33,7 @@ header {
 #logo {
   float: left;
   height: 50px;
-  padding: 5px;
+  padding: 0px;
 }
 
 .buttons {
@@ -94,6 +95,7 @@ h1.title {
   font-size: 14px;
   min-height: fit-content;
   min-height: -moz-fit-content;
+  min-height: intrinsic;
   max-width: 800px;
   margin: 10px auto 10px;
   background-color: rgb(255, 255, 255);
@@ -123,6 +125,7 @@ h1.title {
     text-align: center;
     height: -moz-fit-content;
     height: fit-content;
+    height: intrinsic;
   }
 
   #logo {
